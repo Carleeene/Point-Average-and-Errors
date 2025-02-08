@@ -21,6 +21,6 @@ Av = Actual()
 #Fv variable as Forecasting Value
 Fv = {}
 
-for i in range(2,Per+1):
-    Fv[i+1] = ceil((Av[i-2] + Av[i-1])/2)
+for i in range(3, Per+1):
+    Fv[i] = ceil((Av[i-2] + Av[i-1])/2)
 print(Fv)
